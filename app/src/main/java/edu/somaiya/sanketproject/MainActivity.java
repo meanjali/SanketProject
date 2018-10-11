@@ -71,8 +71,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 progressBar.setVisibility(View.GONE);
                 if (task.isSuccessful()) {
                     //finish();
-                    Toast.makeText(getApplicationContext(), "User registered successfully", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(MainActivity.this, WelcomeActivity.class));
+                    Toast.makeText(getApplicationContext(), "Login successfully", Toast.LENGTH_SHORT).show();
+                    //startActivity(new Intent(MainActivity.this, WelcomeActivity.class));
                 } else {
                     Toast.makeText(getApplicationContext(), task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                 }
